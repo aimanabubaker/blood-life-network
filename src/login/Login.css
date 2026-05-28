@@ -1,0 +1,124 @@
+/* ================= LOGIN BOX CONTAINER ================= */
+.login-box-inside {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 15px;
+  background: #ffffff;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-box-inside h2 {
+  color: #1e293b; /* Dark slate text */
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.login-box-inside p {
+  color: #64748b; /* Soft gray text */
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* ================= INPUT FIELDS AND LABELS ================= */
+.input-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+  text-align: left; /* Taki labels left side par alignment mein rahein */
+}
+
+.input-field-group label {
+  color: #475569;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.input-field-group input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  color: #334155;
+  box-sizing: border-box; /* Input out of bounds na jaye */
+  transition: all 0.25s ease-in-out;
+}
+
+/* Input Focus Effects */
+.input-field-group input:focus {
+  outline: none;
+  border-color: #dc2626; /* Blood red color handle */
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.1); /* Soft red glow */
+}
+
+/* ================= ERROR BOX STYLING ================= */
+.error-alert-box {
+  background-color: #fef2f2;
+  border: 1px solid #fee2e2;
+  color: #dc2626 !important;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ================= MAIN SUBMIT BUTTON ================= */
+.login-submit-main-btn {
+  width: 100%;
+  padding: 13px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(220, 38, 38, 0.2);
+  transition: all 0.2s ease-in-out;
+  margin-top: 8px;
+}
+
+.login-submit-main-btn:hover {
+  background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(220, 38, 38, 0.3);
+}
+
+.login-submit-main-btn:active {
+  transform: translateY(1px);
+}
+
+.login-submit-main-btn:disabled {
+  background: #cbd5e1;
+  color: #94a3b8;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* ================= SWITCH REGISTRATION FOOTER ================= */
+.switch-popup-text {
+  font-size: 0.9rem !important;
+  color: #64748b;
+  margin-top: 20px;
+  margin-bottom: 0 !important;
+}
+
+.switch-popup-text span {
+  transition: color 0.2s ease;
+}
+
+.switch-popup-text span:hover {
+  color: #991b1b !important;
+  text-decoration: underline;
+}

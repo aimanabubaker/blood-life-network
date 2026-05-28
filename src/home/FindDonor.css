@@ -1,0 +1,259 @@
+.find-donor-page {
+  /* ================= PURE PREMIUM RED THEME BACKGROUND IMAGE ================= */
+  background: linear-gradient(to bottom, rgba(153, 27, 27, 0.85), rgba(17, 24, 39, 0.95)),
+              url('https://images.unsplash.com/photo-1615461066841-6116e61058f4?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-bottom: 60px;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+
+.page-banner {
+  /* ================= BEAUTIFUL RED BANNER SECTION ================= */
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.back-home-btn {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.back-home-btn:hover {
+  background: #ffffff;
+  color: #dc2626;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.page-banner h1 {
+  font-size: 2.4rem;
+  margin: 0 0 10px 0;
+  font-weight: 800;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.page-banner p {
+  margin: 0;
+  color: #fee2e2;
+  font-size: 1.1rem;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.filter-sidebar-card {
+  /* ================= RICH RED GLASS FOR SIDEBAR ================= */
+  background: rgba(153, 27, 27, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  height: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.filter-sidebar-card h3 {
+  margin: 0 0 20px 0;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 8px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fca5a5;
+}
+
+.filter-sidebar-card select,
+.filter-sidebar-card input {
+  height: 46px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+  font-size: 0.95rem;
+  color: #ffffff;
+  transition: all 0.2s;
+}
+
+.filter-sidebar-card select option {
+  background-color: #991b1b;
+  color: white;
+}
+
+.filter-sidebar-card select:focus,
+.filter-sidebar-card input:focus {
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.filter-apply-btn {
+  width: 100%;
+  height: 46px;
+  background-color: #ffffff;
+  color: #dc2626;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.filter-apply-btn:hover {
+  background-color: #fee2e2;
+  transform: translateY(-1px);
+}
+
+.results-content h3 {
+  margin: 0 0 20px 0;
+  color: #ffffff;
+}
+
+.donor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+.donor-list-card {
+  /* ================= SOLID WHITE GLOSSY CARDS FOR DONORS ================= */
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.donor-list-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-top-info {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.donor-blood-badge {
+  background: #fee2e2;
+  color: #dc2626;
+  font-weight: 800;
+  font-size: 1.3rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.card-top-info h4 {
+  margin: 0 0 4px 0;
+  font-size: 1.1rem;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.donor-location-text {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.card-bottom-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 15px;
+}
+
+.status-tag {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.status-tag.available {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.status-tag.busy {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.call-donor-btn {
+  text-decoration: none;
+  background-color: #1e293b;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.call-donor-btn:hover {
+  background-color: #dc2626;
+}
+
+.no-results-box {
+  background: rgba(153, 27, 27, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  text-align: center;
+  border-radius: 16px;
+  color: #fee2e2;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 910px) {
+  .page-container { grid-template-columns: 1fr; }
+  .back-home-btn { position: static; margin-bottom: 15px; display: inline-block; }
+}

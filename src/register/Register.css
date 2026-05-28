@@ -1,0 +1,146 @@
+/* Container Box Custom Styles */
+.register-form-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+  width: 100%;
+}
+
+.register-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.register-subtitle {
+  font-size: 0.95rem;
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+/* Individual Row Spacing */
+.form-row-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.form-row-group label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+/* Common Inputs and Select Dropdowns styling */
+.form-row-group input[type="text"],
+.form-row-group input[type="email"],
+.form-row-group input[type="password"],
+.form-row-group input[type="date"],
+.form-row-group select {
+  width: 100%;
+  padding: 11px 14px;
+  font-size: 0.95rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  color: #1e293b;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Focus Glow States */
+.form-row-group input:focus,
+.form-row-group select:focus {
+  border-color: #dc2626;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+/* Form 2-Column Grid Layout */
+.form-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  width: 100%;
+}
+
+/* Checkbox Alignment styling */
+.checkbox-align {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  user-select: none;
+}
+
+.checkbox-align input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #dc2626; /* Makes checkbox active color red */
+  cursor: pointer;
+}
+
+.checkbox-align label {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* Error Message Styles */
+.err-msg {
+  color: #dc2626;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.input-error {
+  border-color: #ef4444 !important;
+  background-color: #fef2f2 !important;
+}
+
+/* Main Premium Button Styling */
+.register-submit-btn-main {
+  width: 100%;
+  padding: 13px;
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.2);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-submit-btn-main:hover:not(:disabled) {
+  background: #b91c1c;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(220, 38, 38, 0.3);
+}
+
+.register-submit-btn-main:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Responsive Overrides */
+@media (max-width: 480px) {
+  .form-grid-2col {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
